@@ -1,26 +1,18 @@
-def pa(a,b,c):
-    if a % 2 == 0:
-        a -= 1
-        pa(a,b,c)
+def pa(a,b):
+    if a > b:
+        return 0
+    elif a % 2 != 0:
+        return a + pa(a + 2, b)
     else:
-        for i in range(a,b,-2):
-            c += i
-    print(c)
+        return pa(a + 1,b)
+
 lista = []
 lista.append(int(input()))
 lista.append(int(input()))
-sorted(lista)
+lista = sorted(lista)
 
 x = lista[0]
 y = lista[1]
-z = 0
 
-if x == y:
-    print(0)
-
-else:
-    if y % 2 == 0:
-        y += 1
-    else:
-        y += 2 
-    pa(x,y,z)
+ans = pa(x + 1,y - 1)
+print(ans)

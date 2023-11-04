@@ -1,14 +1,18 @@
-def min(x,y,z):
+def min(x,y):
 
-    if  x < y and x < z:
-        print('Otavio')
-    elif  z < y and z < x:
-        print('Ian')
-    elif  y < x and y < z:
-        print('Bruno')
-    elif x == y or y == z or x == z:
+    if x < y:
+        return(x)
+    elif x == y:
         print('Empate')
+    else:
+        return(y)
 
 o, b, i = map(float, input().split())
-min(o,b,i)
-
+mr = min(min(o,b), i)
+mr = float(mr)
+if mr == o:
+    print('Otavio')
+elif mr == b:
+    print('Bruno')
+elif mr == i:
+    print('Ian')
