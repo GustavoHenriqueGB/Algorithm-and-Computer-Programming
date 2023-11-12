@@ -1,3 +1,4 @@
+
 n = int(input())
 
 for i in range(0,n):
@@ -7,11 +8,17 @@ for i in range(0,n):
     y = lista[0]
     soma = 0
 
-    while x > y:
-        if x % 2 == 0:
-            x - 1 
-            soma += x
-        else:
-            x - 2
-            soma += x
-    print(soma)
+    if x == y:
+        print(0)
+
+    else:
+        while x > y:
+            if x % 2 == 0:
+                soma += x
+                x -= 1 
+            
+            else:
+                soma += x
+                x -= 2
+                
+        print(soma - lista[1])

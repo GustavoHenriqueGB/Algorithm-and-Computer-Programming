@@ -1,3 +1,6 @@
+import sys
+sys.setrecursionlimit(100000)
+
 def pa(a,b):
     if a > b:
         return 0
