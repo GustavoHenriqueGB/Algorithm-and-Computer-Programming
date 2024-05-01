@@ -1,2 +1,2 @@
 # Beecrowd_Exercices
-Solving beecrowd exercises.
+Resolvendo exercicios da beecrowd.
