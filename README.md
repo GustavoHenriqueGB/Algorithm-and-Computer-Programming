@@ -1,6 +1,6 @@
 # Algorithm and Computer Programming
 
-This repository contains materials and assignments for the **Algorithm and Computer Programming** course taken at university. It includes code, exercises, and notes created during the course to practice and improve programming skills.
+This repository contains materials and assignments for the **Algorithm and Computer Programming** course taken at university. It includes exercises and the final project.
 
 ## Contents
 
